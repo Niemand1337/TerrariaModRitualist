@@ -8,10 +8,12 @@ using Terraria.ModLoader;
 public class RitualistPlayer : ModPlayer
 {
     public bool hasRedBloodVial = false;
+    public bool hasBandOfCorruption = false;
 
     public override void ResetEffects()
     {
         hasRedBloodVial = false;
+        hasBandOfCorruption = false
     }
 
     public override void UpdateEquips()
@@ -28,6 +30,11 @@ public class RitualistPlayer : ModPlayer
             if (accessory.type == ModContent.ItemType<RedBloodVial>())
             {
                 hasRedBloodVial = true;
+                continue;
+            }
+            if (accessory.type == ModContent.ItemType<BandOfCorruption>())
+            {
+                hasBandOfCorruption = true;
                 continue;
             }
         }

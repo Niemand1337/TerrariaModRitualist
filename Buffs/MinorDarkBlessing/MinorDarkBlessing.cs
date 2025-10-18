@@ -42,7 +42,7 @@ namespace Ritualist.Buffs.MinorDarkBlessing
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.lifeRegen += 5;
+            player.lifeRegen += 5; // 2.5 life per second
             base.Update(player, ref buffIndex);
         }
     }

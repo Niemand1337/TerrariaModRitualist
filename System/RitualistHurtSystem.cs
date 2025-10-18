@@ -21,11 +21,17 @@ namespace Ritualist.System
             PlayerDeathReason suicide = PlayerDeathReason.ByCustomReason(NetworkText.FromLiteral(player.name + " sacrificed too much"));
             RitualistPlayer modPlayer = player.GetModPlayer<RitualistPlayer>();
 
-            // Adjustments through accessories and buffs
+            // Adjustments through accessories
             if (modPlayer.hasRedBloodVial)
             {
                 hurt -= 3;
             }
+            if (modPlayer.hasBandOfCorruption)
+            {
+                // TODO - Give Buff MinorCorruption (+5 lifeRegen and 5% ritualist damage) for 5 seconds
+            }
+
+            // Adjustments through buffs
             if (player.HasBuff(ModContent.BuffType<EyeOnYouBlessing>()))
             {
                 hurt -= 2;
