@@ -19,7 +19,7 @@ namespace Ritualist.Content.Items.Weapons.PreBoss.MetalboundCatalyst
 
         public override void SetDefaults()
         {
-            Item.damage = 26;
+            Item.damage = 23;
             Item.crit = 2;
             Item.DamageType = ModContent.GetInstance<RitualistClass>();
             Item.knockBack = 2;

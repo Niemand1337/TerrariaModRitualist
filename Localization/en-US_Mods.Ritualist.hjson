@@ -43,13 +43,13 @@ Items: {
 	CorruptedMetalBlade: {
 		DisplayName: Corrupted Metal Blade
 		Tooltip:
-		'''
-		A once shining sword - corrupted by darkness.
-		Sacrifice 7 life when missing a Dark Blessing.
-		Shoots a projectile on every third swing with a Dark Blessing.
-		'''
+			'''
+			A once shining sword - corrupted by darkness.
+			Sacrifice 7 life when missing a Dark Blessing.
+			Shoots a projectile on every fourth swing with a Dark Blessing.
+			'''
 	}
 }
 
-DamageClasses.RitualistClass.DisplayName: Ritualist damage
+DamageClasses.RitualistClass.DisplayName: ritualist damage
 Projectiles.MetalboundCatalystProjectile.DisplayName: Metalbound Catalyst Projectile

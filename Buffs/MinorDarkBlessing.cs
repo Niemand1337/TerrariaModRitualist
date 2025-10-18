@@ -36,7 +36,7 @@ namespace Ritualist.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.lifeRegen += 5 ;
+            player.lifeRegen += 5;
             base.Update(player, ref buffIndex);
         }
     }

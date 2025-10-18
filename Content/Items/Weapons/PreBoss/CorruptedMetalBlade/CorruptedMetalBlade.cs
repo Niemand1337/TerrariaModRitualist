@@ -13,14 +13,14 @@ namespace Ritualist.Content.Items.Weapons.PreBoss.CorruptedMetalBlade
     /// Weapon, PreBoss
     /// Broadsword that also shoots projectiles like the Ice Blade
     /// Without Dark Blessing player takes 10 sacrificialHurt
-    /// With Dark Blessing player shots MetalboundCatalystProjectile every third swing
+    /// With Dark Blessing player shots MetalboundCatalystProjectile every fourth swing
     /// </summary>
     public class CorruptedMetalBlade : ModItem
     {
         public int swingCount = 0;
         public override void SetDefaults()
         {
-            Item.damage = 18;
+            Item.damage = 17;
             Item.crit = 2;
             Item.DamageType = ModContent.GetInstance<RitualistClass>();
             Item.knockBack = 4.57f;
@@ -63,7 +63,7 @@ namespace Ritualist.Content.Items.Weapons.PreBoss.CorruptedMetalBlade
             if (player.HasBuff(ModContent.BuffType<MinorDarkBlessing>())) // Used with buff MinorDarkBlessing
             {
                 swingCount++;
-                if (swingCount > 2) // Shoot every 3 swing
+                if (swingCount > 3) // Shoot every 4 swing
                 {
                     swingCount = 0;
                     Projectile.NewProjectile(source, player.Center, velocity, type, damage, knockback, player.whoAmI);
