@@ -3,7 +3,6 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Terraria.Localization;
 using Ritualist.Buffs.EyeOnYouBlessing;
-using Ritualist.Buffs.MinorDarkBlessing;
 
 
 

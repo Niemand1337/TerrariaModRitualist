@@ -2,8 +2,8 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
-using Ritualist.Content.Items.Accessories.PreBoss.RedBloodVial;
-using Ritualist.Content.Items.Weapons.PostEyeOfCthulhu.SacrificialDemonicDagger;
+using Ritualist.Content.Items.Accessories.PreHardmode.RedBloodVial;
+using Ritualist.Content.Items.Weapons.PreHardmode.SacrificialDemonicDagger;
 
 namespace Ritualist.Content.Systems
 {

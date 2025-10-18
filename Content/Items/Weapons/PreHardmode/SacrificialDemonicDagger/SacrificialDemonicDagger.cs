@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Ritualist.Content.Items.Weapons.PostEyeOfCthulhu.SacrificialDemonicDagger
+namespace Ritualist.Content.Items.Weapons.PreHardmode.SacrificialDemonicDagger
 { 
     /// <summary>
     /// Utility item, Post Eye of Cthulhu

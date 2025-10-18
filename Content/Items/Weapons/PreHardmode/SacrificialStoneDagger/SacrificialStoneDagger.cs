@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Ritualist.Content.Items.Weapons.PreBoss.SacrificialStoneDagger
+namespace Ritualist.Content.Items.Weapons.PreHardmode.SacrificialStoneDagger
 { 
 	/// <summary>
     /// Utility item, PreBoss

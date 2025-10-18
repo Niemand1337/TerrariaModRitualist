@@ -28,6 +28,7 @@ public class RitualistPlayer : ModPlayer
             if (accessory.type == ModContent.ItemType<RedBloodVial>())
             {
                 hasRedBloodVial = true;
+                continue;
             }
         }
     }
