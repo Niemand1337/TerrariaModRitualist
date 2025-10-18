@@ -6,7 +6,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Ritualist.Content.Items.SacrificialStoneDagger
+namespace Ritualist.Content.Items.PreBoss.SacrificialStoneDagger
 { 
 	public class SacrificialStoneDagger : ModItem
 	{
