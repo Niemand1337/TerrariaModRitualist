@@ -31,7 +31,6 @@ namespace Ritualist.Buffs
 
             drawParams.Texture = ourTexture;
             drawParams.SourceRectangle = ourSourceRectangle;
-            // Return true to let the game draw the buff icon.
             return true;
         }
 

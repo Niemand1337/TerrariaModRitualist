@@ -1,7 +1,11 @@
 Buffs: {
 	MinorDarkBlessing: {
 		DisplayName: Minor Dark Blessing
-		Description: Your small sacrifice was received.
+		Description:
+			'''
+			Your small sacrifice was received.
+			Increase life regeneration by 2.5 per second.
+			'''
 	}
 }
 
@@ -11,7 +15,8 @@ Items: {
 		Tooltip:
 			'''
 			It will hurt you, but your sacrifice may be worth it...
-			Take 10 damage on usage and receive a dark blessing.
+			Take 10 damage on usage.
+			Receive a dark blessing.
 			'''
 	}
 
@@ -20,14 +25,19 @@ Items: {
 		Tooltip:
 			'''
 			You feel a dark power, which is not your own.
-			But mabye someone will let you use it?
-			Needs Minor Dark Blessing to be used.
+			But maybe someone will let you use it?
+			Needs Minor Dark Blessing to cast.
 			'''
 	}
 
 	RedBloodVial: {
 		DisplayName: Red Blood Vial
-		Tooltip: ""
+		Tooltip:
+			'''
+			Why only sacrifice your own blood?
+			Take 3 less damage on sacrifices.
+			Increase life regeneration by 0.5 per second.
+			'''
 	}
 }
 
