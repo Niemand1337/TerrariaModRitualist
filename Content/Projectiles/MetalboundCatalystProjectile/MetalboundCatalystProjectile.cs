@@ -8,8 +8,8 @@ namespace Ritualist.Content.Projectiles.MetalboundCatalystProjectile
     public class MetalboundCatalystProjectile : ModProjectile
     {
         static readonly ProjectileHoming homingSystem = ModContent.GetInstance<ProjectileHoming>();
-        static float homingRange = 175f; // How far to search for targets
-        static float homingStrength = 0.38f; // How strongly to adjust direction
+        static readonly float homingRange = 175f; // How far to search for targets
+        static readonly float homingStrength = 0.38f; // How strongly to adjust direction
 
         public override void SetDefaults()
         {

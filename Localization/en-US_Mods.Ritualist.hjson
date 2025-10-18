@@ -7,6 +7,19 @@ Buffs: {
 			Increase life regeneration by 2.5 per second.
 			'''
 	}
+
+	EyeOnYouBlessing: {
+		DisplayName: Eye On You Blessing
+		Description:
+		'''
+		Something is watching over you.
+		It's calming and creepy at the same time.
+		Take 2 less damage on sacrifices.
+		Jump 3% higher.
+		Move 5% faster.
+		Have 7 additional defense.
+		'''
+	}
 }
 
 Items: {
@@ -17,6 +30,16 @@ Items: {
 			It will hurt you, but your sacrifice may be worth it...
 			Sacrifice 33 life on usage.
 			Receive a Minor Dark Blessing.
+			'''
+	}
+
+	SacrificialDemonicDagger: {
+		DisplayName: Sacrificial Demonic Dagger
+		Tooltip:
+			'''
+			Pain is universal — let it serve a purpose.
+			Sacrifice 33 life on usage.
+			Receive a Minor Dark Blessing and the Eye On You Blessing.
 			'''
 	}
 

@@ -1,5 +1,4 @@
 using Microsoft.Xna.Framework;
-using Ritualist.Buffs;
 using Ritualist.Buffs.MinorDarkBlessing;
 using Ritualist.Content.Projectiles.MetalboundCatalystProjectile;
 using Terraria;

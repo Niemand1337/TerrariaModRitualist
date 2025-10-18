@@ -17,7 +17,7 @@ namespace Ritualist.Buffs.EyeOnYouBlessing
 
         public static readonly int FrameCount = 4; // Amount of frames we have on our animation spritesheet.
 		public static readonly int AnimationSpeed = 30;
-        public static readonly string AnimationSheetPath = "Ritualist/Buffs/MinorDarkBlessing";
+        public static readonly string AnimationSheetPath = "Ritualist/Buffs/EyeOnYouBlessing/EyeOnYouBlessing";
         private Asset<Texture2D> animatedTexture;
 
         public override void SetStaticDefaults()
