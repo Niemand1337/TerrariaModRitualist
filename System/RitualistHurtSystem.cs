@@ -2,6 +2,8 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Terraria.Localization;
+using Ritualist.Buffs.EyeOnYouBlessing;
+using Ritualist.Buffs.MinorDarkBlessing;
 
 
 
@@ -20,10 +22,14 @@ namespace Ritualist.System
             PlayerDeathReason suicide = PlayerDeathReason.ByCustomReason(NetworkText.FromLiteral(player.name + " sacrificed too much"));
             RitualistPlayer modPlayer = player.GetModPlayer<RitualistPlayer>();
 
-            // Adjustments through accessories
+            // Adjustments through accessories and buffs
             if (modPlayer.hasRedBloodVial)
             {
                 hurt -= 3;
+            }
+            if (player.HasBuff(ModContent.BuffType<EyeOnYouBlessing>()))
+            {
+                hurt -= 2;
             }
 
             player.Hurt(suicide, hurt, 0, pvp: false, quiet: false, cooldownCounter: -1, dodgeable: false, armorPenetration: 9999f, scalingArmorPenetration: 9999f, knockback: 0f);

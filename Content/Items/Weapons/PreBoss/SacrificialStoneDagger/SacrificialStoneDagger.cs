@@ -1,14 +1,16 @@
 using Microsoft.Xna.Framework;
-using Ritualist.Buffs;
+using Ritualist.Buffs.MinorDarkBlessing;
 using Ritualist.System;
 using Terraria;
-using Terraria.DataStructures;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace Ritualist.Content.Items.Weapons.PreBoss.SacrificialStoneDagger
 { 
+	/// <summary>
+    /// Utility item, PreBoss
+    /// Sacrifical dagger that the hurts user to recieve MinorDarkBlessing
+    /// </summary>
 	public class SacrificialStoneDagger : ModItem
 	{
 		public override void SetDefaults()
@@ -38,7 +40,7 @@ namespace Ritualist.Content.Items.Weapons.PreBoss.SacrificialStoneDagger
 		public override bool? UseItem(Player player)
 		{
 			// Player sacrifice
-			RitualistHurtSystem.RitualistHurt(30, player);
+			RitualistHurtSystem.RitualistHurt(33, player);
 
 			// Player recieves blessings
 			player.AddBuff(ModContent.BuffType<MinorDarkBlessing>(), 600); // Increases lifeRegen by 5, which results in 25hp over 10 seconds

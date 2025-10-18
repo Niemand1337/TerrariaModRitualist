@@ -5,8 +5,14 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace Ritualist.Buffs
-{ 
+namespace Ritualist.Buffs.MinorDarkBlessing
+{
+    /// <summary>
+    /// Buff
+    /// Basic blessing that is part of the Dark Blessing group.
+    /// Enables most weapons of the mod to work.
+    /// Provides low life regeneration boost.
+    /// </summary>
     public class MinorDarkBlessing : ModBuff
     {
 

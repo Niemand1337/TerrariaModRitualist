@@ -1,5 +1,5 @@
 using Microsoft.Xna.Framework;
-using Ritualist.Buffs;
+using Ritualist.Buffs.MinorDarkBlessing;
 using Ritualist.Content.Projectiles.MetalboundCatalystProjectile;
 using Ritualist.System;
 using Terraria;
@@ -26,7 +26,7 @@ namespace Ritualist.Content.Items.Weapons.PreBoss.CorruptedMetalBlade
             Item.knockBack = 4.57f;
             Item.noMelee = false;
 
-            Item.value = Item.buyPrice(gold: 1);
+            Item.value = Item.buyPrice(gold: 3);
             Item.rare = ItemRarityID.Blue;
 
             Item.width = 40;

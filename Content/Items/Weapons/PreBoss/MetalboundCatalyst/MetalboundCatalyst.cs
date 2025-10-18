@@ -1,5 +1,6 @@
 using Microsoft.Xna.Framework;
 using Ritualist.Buffs;
+using Ritualist.Buffs.MinorDarkBlessing;
 using Ritualist.Content.Projectiles.MetalboundCatalystProjectile;
 using Terraria;
 using Terraria.DataStructures;
@@ -26,7 +27,7 @@ namespace Ritualist.Content.Items.Weapons.PreBoss.MetalboundCatalyst
             Item.mana = 11;
             Item.noMelee = true;
 
-            Item.value = Item.buyPrice(gold: 1);
+            Item.value = Item.buyPrice(gold: 3);
             Item.rare = ItemRarityID.Blue;
 
             Item.width = 40;

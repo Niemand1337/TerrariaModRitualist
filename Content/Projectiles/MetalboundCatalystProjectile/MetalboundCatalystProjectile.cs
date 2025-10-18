@@ -1,4 +1,3 @@
-using Microsoft.Xna.Framework;
 using Ritualist.System;
 using Terraria;
 using Terraria.ID;
@@ -36,9 +35,13 @@ namespace Ritualist.Content.Projectiles.MetalboundCatalystProjectile
             // Dust for animation
             if (Main.rand.NextBool(3))
             {
-                int dustIndex = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.GemAmethyst, Projectile.velocity.X * 0.15f, Projectile.velocity.Y * 0.15f);
+                int dustIndex = Dust.NewDust(
+                    Projectile.position, Projectile.width,
+                    Projectile.height, DustID.GemAmethyst,
+                    Projectile.velocity.X * 0.15f,
+                    Projectile.velocity.Y * 0.15f,
+                    Scale: 1.3f);
                 Dust dust = Main.dust[dustIndex];
-                dust.scale = 1.3f;
                 dust.noGravity = true;
             }
         }
