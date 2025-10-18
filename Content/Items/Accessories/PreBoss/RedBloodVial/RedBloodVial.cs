@@ -3,6 +3,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Ritualist.Content.Items.Accessories.PreBoss.RedBloodVial {
+    /// <summary>
+    /// Accessory
+    /// Increases lifeRegen by 0.5 health per second and lowers sacrificialHurt by 3 flat
+    /// Can be dropped by BloodZombies with 10% chance
+    /// </summary>
     public class RedBloodVial : ModItem
     {
         public override void SetDefaults()
@@ -12,7 +17,7 @@ namespace Ritualist.Content.Items.Accessories.PreBoss.RedBloodVial {
             Item.accessory = true;
             Item.rare = ItemRarityID.Green;
             Item.value = Item.buyPrice(gold: 2);
-            Item.defense = 0; // Optional, falls du etwas Defense geben willst
+            Item.defense = 0;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
