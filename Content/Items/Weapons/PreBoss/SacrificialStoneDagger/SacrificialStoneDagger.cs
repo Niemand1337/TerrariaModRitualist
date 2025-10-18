@@ -1,5 +1,6 @@
 using Microsoft.Xna.Framework;
 using Ritualist.Buffs;
+using Ritualist.System;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -36,9 +37,8 @@ namespace Ritualist.Content.Items.Weapons.PreBoss.SacrificialStoneDagger
 
 		public override bool? UseItem(Player player)
 		{
-			// Player takes 30 damage
-			PlayerDeathReason suicide = PlayerDeathReason.ByCustomReason(NetworkText.FromLiteral(player.name + " sacrificed too much"));
-			
+			// Player sacrifice
+			RitualistHurtSystem.RitualistHurt(30, player);
 
 			// Player recieves blessings
 			player.AddBuff(ModContent.BuffType<MinorDarkBlessing>(), 600); // Increases lifeRegen by 5, which results in 25hp over 10 seconds

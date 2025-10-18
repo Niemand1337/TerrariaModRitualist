@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Ritualist.Content.Items.Accessories.RedBloodVial {
+namespace Ritualist.Content.Items.Accessories.PreBoss.RedBloodVial {
     public class RedBloodVial : ModItem
     {
         public override void SetDefaults()

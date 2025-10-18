@@ -1,4 +1,4 @@
-using Ritualist.Content.Items.Accessories.RedBloodVial;
+using Ritualist.Content.Items.Accessories.PreBoss.RedBloodVial;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -17,9 +17,18 @@ public class RitualistPlayer : ModPlayer
     public override void UpdateEquips()
     {
         ResetEffects();
-        if (Player.HasItem(ModContent.ItemType<RedBloodVial>()))
+        for (int i = 3; i < 8 + Player.extraAccessorySlots; i++) // First 3 are armor, 5 accessory slots per default
         {
-            hasRedBloodVial = true;
+            Item accessory = Player.armor[i];
+            if (accessory == null || accessory.IsAir) // Skip empty slots
+            {
+                continue;
+            }
+
+            if (accessory.type == ModContent.ItemType<RedBloodVial>())
+            {
+                hasRedBloodVial = true;
+            }
         }
     }
 }
