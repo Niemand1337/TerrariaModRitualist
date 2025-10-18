@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Ritualist.Content.Items.Accessories.PreBoss.RedBloodVial {
+namespace Ritualist.Content.Items.Accessories.PreHardmode.RedBloodVial {
     /// <summary>
     /// Accessory, PreBoss
     /// Increases lifeRegen by 0.5 health per second and lowers sacrificialHurt by 3 flat
