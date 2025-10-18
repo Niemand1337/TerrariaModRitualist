@@ -1,0 +1,3 @@
+displayName = Ritualist
+author = Niemand1337
+version = 0.1

@@ -1,0 +1,30 @@
+Buffs: {
+	MinorDarkBlessing: {
+		DisplayName: Minor Dark Blessing
+		Description: Your small sacrifice was received.
+	}
+}
+
+Items: {
+	SacrificialStoneDagger: {
+		DisplayName: Sacrificial Stone Dagger
+		Tooltip:
+			'''
+			It will hurt you, but your sacrifice may be worth it...
+			Take 10 damage on usage and receive a dark blessing.
+			'''
+	}
+
+	MetalboundCatalyst: {
+		DisplayName: Metalbound Catalyst
+		Tooltip:
+			'''
+			You feel a dark power, which is not your own.
+			But mabye someone will let you use it?
+			Needs Minor Dark Blessing to be used.
+			'''
+	}
+}
+
+DamageClasses.RitualistClass.DisplayName: Ritualist Class
+Projectiles.MetalboundCatalystProjectile.DisplayName: Metalbound Catalyst Projectile
