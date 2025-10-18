@@ -3,6 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
 using Ritualist.Content.Items.Accessories.PreBoss.RedBloodVial;
+using Ritualist.Content.Items.Weapons.PostEyeOfCthulhu.SacrificialDemonicDagger;
 
 namespace Ritualist.Content.Systems
 {
@@ -16,6 +17,10 @@ namespace Ritualist.Content.Systems
             if (npc.type == NPCID.BloodZombie)
             {
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RedBloodVial>(), 10));
+            }
+            if (npc.type == NPCID.EyeofCthulhu)
+            {
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<SacrificialDemonicDagger>(), 100));
             }
         }
     }
