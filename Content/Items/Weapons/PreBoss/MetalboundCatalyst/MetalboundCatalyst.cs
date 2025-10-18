@@ -6,7 +6,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Ritualist.Content.Items.PreBoss.MetalboundCatalyst
+namespace Ritualist.Content.Items.Weapons.PreBoss.MetalboundCatalyst
 {
     public class MetalboundCatalyst : ModItem
     {

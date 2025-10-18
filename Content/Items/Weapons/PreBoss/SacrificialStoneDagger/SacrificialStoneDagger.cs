@@ -6,7 +6,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Ritualist.Content.Items.PreBoss.SacrificialStoneDagger
+namespace Ritualist.Content.Items.Weapons.PreBoss.SacrificialStoneDagger
 { 
 	public class SacrificialStoneDagger : ModItem
 	{
@@ -36,9 +36,9 @@ namespace Ritualist.Content.Items.PreBoss.SacrificialStoneDagger
 
 		public override bool? UseItem(Player player)
 		{
-			// Player takes 25 damage
+			// Player takes 30 damage
 			PlayerDeathReason suicide = PlayerDeathReason.ByCustomReason(NetworkText.FromLiteral(player.name + " sacrificed too much"));
-			player.Hurt(suicide, 30, 0);
+			
 
 			// Player recieves blessings
 			player.AddBuff(ModContent.BuffType<MinorDarkBlessing>(), 600); // Increases lifeRegen by 5, which results in 25hp over 10 seconds
