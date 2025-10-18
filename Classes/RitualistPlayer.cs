@@ -1,4 +1,4 @@
-using Ritualist.Content.Items.Accessories.PreBoss.RedBloodVial;
+using Ritualist.Content.Items.Accessories.PreHardmode.RedBloodVial;
 using Terraria;
 using Terraria.ModLoader;
 
