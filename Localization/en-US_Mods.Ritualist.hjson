@@ -15,8 +15,8 @@ Items: {
 		Tooltip:
 			'''
 			It will hurt you, but your sacrifice may be worth it...
-			Take 10 damage on usage.
-			Receive a dark blessing.
+			Sacrifice 30 life on usage.
+			Receive a Minor Dark Blessing.
 			'''
 	}
 
@@ -26,7 +26,7 @@ Items: {
 			'''
 			You feel a dark power, which is not your own.
 			But maybe someone will let you use it?
-			Needs Minor Dark Blessing to cast.
+			Needs Dark Blessing to cast.
 			'''
 	}
 
@@ -39,7 +39,17 @@ Items: {
 			Increase life regeneration by 0.5 per second.
 			'''
 	}
+
+	CorruptedMetalBlade: {
+		DisplayName: Corrupted Metal Blade
+		Tooltip:
+		'''
+		A once shining sword - corrupted by darkness.
+		Sacrifice 7 life when missing a Dark Blessing.
+		Shoots a projectile on every third swing with a Dark Blessing.
+		'''
+	}
 }
 
-DamageClasses.RitualistClass.DisplayName: Ritualist Class
+DamageClasses.RitualistClass.DisplayName: Ritualist damage
 Projectiles.MetalboundCatalystProjectile.DisplayName: Metalbound Catalyst Projectile

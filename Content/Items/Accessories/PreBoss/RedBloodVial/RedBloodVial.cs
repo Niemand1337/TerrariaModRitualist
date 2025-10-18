@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace Ritualist.Content.Items.Accessories.PreBoss.RedBloodVial {
     /// <summary>
-    /// Accessory
+    /// Accessory, PreBoss
     /// Increases lifeRegen by 0.5 health per second and lowers sacrificialHurt by 3 flat
     /// Can be dropped by BloodZombies with 10% chance
     /// </summary>

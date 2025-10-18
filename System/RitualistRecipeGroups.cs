@@ -8,11 +8,14 @@ namespace Ritualist.System
     {
         public override void AddRecipeGroups()
         {
-            RecipeGroup ironGroup = new RecipeGroup(() => "Iron or Lead Bar", ItemID.IronBar, ItemID.LeadBar);
-            RecipeGroup.RegisterGroup("Ritualist:IronOrLead", ironGroup);
+            RecipeGroup ironBarGroup = new RecipeGroup(() => "Iron or Lead Bar", ItemID.IronBar, ItemID.LeadBar);
+            RecipeGroup.RegisterGroup("Ritualist:Iron-OrLeadBar", ironBarGroup);
 
-            RecipeGroup copperGroup = new RecipeGroup(() => "Copper or Tin Bar", ItemID.CopperBar, ItemID.TinBar);
-            RecipeGroup.RegisterGroup("Ritualist:CopperOrTin", copperGroup);
+            RecipeGroup copperBarGroup = new RecipeGroup(() => "Copper or Tin Bar", ItemID.CopperBar, ItemID.TinBar);
+            RecipeGroup.RegisterGroup("Ritualist:Copper-OrTinBar", copperBarGroup);
+
+            RecipeGroup metalBroadswordGroup = new RecipeGroup(() => "Gold or Platinum Broadsword", ItemID.GoldBroadsword, ItemID.PlatinumBroadsword);
+            RecipeGroup.RegisterGroup("Ritualist:Gold-OrPlatinumBroadsword", metalBroadswordGroup);
         }
     }
 }

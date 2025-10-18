@@ -26,7 +26,7 @@ namespace Ritualist.System
                 hurt -= 3;
             }
 
-            player.Hurt(suicide, hurt, 0);
+            player.Hurt(suicide, hurt, 0, pvp: false, quiet: false, cooldownCounter: -1, dodgeable: false, armorPenetration: 9999f, scalingArmorPenetration: 9999f, knockback: 0f);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Ritualist.Content.Items.Weapons.PreBoss.SacrificialStoneDagger
 			Item.reuseDelay = 14;
 			
 			Item.value = Item.buyPrice(copper: 5);
-			Item.rare = ItemRarityID.Blue;
+			Item.rare = ItemRarityID.Orange;
 			Item.UseSound = SoundID.Item1;
 		}
 

@@ -1,41 +1,41 @@
 using Microsoft.Xna.Framework;
 using Ritualist.Buffs;
 using Ritualist.Content.Projectiles.MetalboundCatalystProjectile;
+using Ritualist.System;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Ritualist.Content.Items.Weapons.PreBoss.MetalboundCatalyst
+namespace Ritualist.Content.Items.Weapons.PreBoss.CorruptedMetalBlade
 {
     /// <summary>
     /// Weapon, PreBoss
-    /// Magic staff thats shoots two homing projectiles MetalboundCatalystProjectile.
-    /// Can only be used with a Dark Blessing
+    /// Broadsword that also shoots projectiles like the Ice Blade
+    /// Without Dark Blessing player takes 10 sacrificialHurt
+    /// With Dark Blessing player shots MetalboundCatalystProjectile every third swing
     /// </summary>
-    public class MetalboundCatalyst : ModItem
+    public class CorruptedMetalBlade : ModItem
     {
-        private static readonly float weaponLength = 55.56f; // Weapons visual length -> sqrt(40**2 + 40**2) ~ 56.56f
-
+        public int swingCount = 0;
         public override void SetDefaults()
         {
-            Item.damage = 26;
+            Item.damage = 18;
             Item.crit = 2;
             Item.DamageType = ModContent.GetInstance<RitualistClass>();
-            Item.knockBack = 2;
-            Item.mana = 11;
-            Item.noMelee = true;
+            Item.knockBack = 4.57f;
+            Item.noMelee = false;
 
             Item.value = Item.buyPrice(gold: 1);
             Item.rare = ItemRarityID.Blue;
 
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 15; 
-            Item.reuseDelay = 30;
-            Item.useAnimation = Item.useTime * 2; // useTime is half the useAnimation - This is so the projectile is cast twice
+            Item.useTime = 20;
+            Item.useAnimation = 20;
             Item.autoReuse = true;
-            Item.useStyle = ItemUseStyleID.Shoot;
+
+            Item.useStyle = ItemUseStyleID.Swing;
             Item.UseSound = SoundID.Item20;
 
             Item.shoot = ModContent.ProjectileType<MetalboundCatalystProjectile>();
@@ -51,7 +51,7 @@ namespace Ritualist.Content.Items.Weapons.PreBoss.MetalboundCatalyst
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddRecipeGroup("Ritualist:Iron-OrLeadBar", 5);
+            recipe.AddRecipeGroup("Ritualist:Gold-OrPlatinumBroadsword", 1);
             recipe.AddRecipeGroup("Ritualist:Copper-OrTinBar", 3);
             recipe.AddIngredient(ItemID.LifeCrystal, 1);
             recipe.AddTile(TileID.Anvils);
@@ -60,13 +60,19 @@ namespace Ritualist.Content.Items.Weapons.PreBoss.MetalboundCatalyst
 
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-            if (player.HasBuff(ModContent.BuffType<MinorDarkBlessing>()))
+            if (player.HasBuff(ModContent.BuffType<MinorDarkBlessing>())) // Used with buff MinorDarkBlessing
             {
-                // Offset the projectile to make it appear from the staff
-                Vector2 offset = velocity.SafeNormalize(Vector2.UnitX) * (weaponLength - 3); // Offset to the weapon tip
-                Vector2 spawnPosition = player.Center + offset;
-
-                Projectile.NewProjectile(source, spawnPosition, velocity, type, damage, knockback, player.whoAmI);
+                swingCount++;
+                if (swingCount > 2) // Shoot every 3 swing
+                {
+                    swingCount = 0;
+                    Projectile.NewProjectile(source, player.Center, velocity, type, damage, knockback, player.whoAmI);
+                }
+            }
+            else // Used without buff MinorDarkBlessing
+            {
+                swingCount = 0;
+                RitualistHurtSystem.RitualistHurt(hurt: 10, player: player);
             }
             return false;
         }
