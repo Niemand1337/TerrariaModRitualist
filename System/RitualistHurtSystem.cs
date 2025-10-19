@@ -3,6 +3,7 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Terraria.Localization;
 using Ritualist.Buffs.EyeOnYouBlessing;
+using Ritualist.Buffs.MinorCorruptionBlessing;
 
 
 
@@ -28,7 +29,7 @@ namespace Ritualist.System
             }
             if (modPlayer.hasBandOfCorruption)
             {
-                // TODO - Give Buff MinorCorruption (+5 lifeRegen and 5% ritualist damage) for 5 seconds
+                player.AddBuff(ModContent.BuffType<MinorCorruptionBlessing>(), 300);
             }
 
             // Adjustments through buffs

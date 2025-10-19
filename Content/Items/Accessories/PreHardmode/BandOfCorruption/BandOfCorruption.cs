@@ -2,12 +2,12 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Ritualist.Content.Items.Accessories.PreHardmode.RedBloodVial {
+namespace Ritualist.Content.Items.Accessories.PreHardmode.BandOfCorruption {
 
     /// <summary>
     /// Accessory
     /// Decrease lifeRegen by 0.5 health per second.
-    /// Recieve MinorCorruption for 5 seconds on sacrifices.
+    /// Recieve MinorCorruptionBlessing for 5s on sacrifices.
     /// </summary>
     public class BandOfCorruption : ModItem
     {
@@ -23,7 +23,7 @@ namespace Ritualist.Content.Items.Accessories.PreHardmode.RedBloodVial {
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.lifeRegen -= 1; // -0.5 health regeneration per second
+            player.lifeRegen -= 1; // -0.5h/s
         }
     }
 }

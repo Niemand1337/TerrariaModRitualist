@@ -11,6 +11,7 @@ namespace Ritualist.Content.Items.Weapons.PreHardmode.SacrificialDemonicDagger
     /// <summary>
     /// Utility item, Post Eye of Cthulhu
     /// Sacrifical dagger that hurts the user to recieve MinorDarkBlessing and EyeOnYouBlessing
+	/// Takes 42 damage on default, heals 37.5 over 15 seconds (4.5 difference)
     /// </summary>
 	public class SacrificialDemonicDagger : ModItem
 	{

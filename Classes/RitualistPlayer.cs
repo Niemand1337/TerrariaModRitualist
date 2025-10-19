@@ -1,3 +1,4 @@
+using Ritualist.Content.Items.Accessories.PreHardmode.BandOfCorruption;
 using Ritualist.Content.Items.Accessories.PreHardmode.RedBloodVial;
 using Terraria;
 using Terraria.ModLoader;
@@ -13,7 +14,7 @@ public class RitualistPlayer : ModPlayer
     public override void ResetEffects()
     {
         hasRedBloodVial = false;
-        hasBandOfCorruption = false
+        hasBandOfCorruption = false;
     }
 
     public override void UpdateEquips()
