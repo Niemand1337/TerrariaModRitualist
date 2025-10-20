@@ -51,9 +51,6 @@ Combine effects from both items - Lose some of the drawbacks (7% jumpheigt and 1
 
 ## System
 
-### Lengthen blessing effects
-Add variable blessing_length_modifier to ModPlayer. Multiply value times base time when granting a blessing.
-
 ### Projectile: Change MetalboundCatalystProjectile
 Adjust the Projectile to MinorDarkProjectile(Homing) and add a non-homing version or make the homing strength a parameter.
 

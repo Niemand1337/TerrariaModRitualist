@@ -43,7 +43,8 @@ namespace Ritualist.Content.Items.Weapons.PreHardmode.SacrificialStoneDagger
 			RitualistHurtSystem.RitualistHurt(33, player);
 
 			// Player recieves blessings
-			player.AddBuff(ModContent.BuffType<MinorDarkBlessing>(), 600); // Increases lifeRegen by 5, which results in 25hp over 10 seconds
+			float blessingModifer= player.GetModPlayer<RitualistPlayer>().blessingModifer;
+            player.AddBuff(ModContent.BuffType<MinorDarkBlessing>(), (int)(600 * blessingModifer));
 			return base.UseItem(player);
 		}
 
