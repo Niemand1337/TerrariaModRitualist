@@ -1,14 +1,27 @@
 ## Ideas
 
-### Accessory: Lengthen blessing effects
-Add variable blessing_length_modifier to ModPlayer. Multiply value times base time when granting a blessing
-
 ### Buff-Adjustment: Eyes On You Blessing
 Change text by adding comment that it might guide some projectiles or so.
-Make some projectiles homing, when they are shoot while having this effect (else not)
+Make some projectiles homing, when they are shoot while having this effect (else not).
 
 ### Weapon: Cursed Weapon
-Projectiles are anti-homing and try to evade enemys. Fly straight with Eyes On You Blessing
+Projectiles are anti-homing and try to evade enemys. Fly straight with Eyes On You Blessing.
+
+### Weapon: Crimtane/Demonite Spear
+Crafting: Crimtane/Demonite Bars and other stuff
+Cost life on usage without dark blessing.
+Shoots laser with Eye On You Blessing (So only good at post Cthulhu).
+Laser pierces one time with Corruption Blessing.
+Crimtane red and Demonite purple color for spear and laser.
+
+### Weapon: Minor Dark Spellbook
+Shoot orbs that are non-damagin and slow down till velocity (0,0).
+Then they shoot a purple laser to the nearest enemy and disappear.
+Cost life on usage without dark blessing.
+Shoots one additional laser with Eye On You Blessing before disappearing.
+
+### Accessory: Minor Dark Spellbookpage
+On sacrifice shoots two the Minor Dark Spellbook in a 45 degree angle to the left and right top of the player
 
 ### Accessory: Eyes On You Blessing
 Need an accessory that grants this blessing, as the Sacrifical Demonic Dagger will be outdated at some point.
@@ -19,6 +32,30 @@ Flavor text like 'What is the worth of a soul anyway?' or "What is the worth of 
 Summons an imp, shoots only when player has Dark Blessing.
 Projectiles should be homing when player has Eyes On You Blessing.
 Make sure that MinorCorruption armor pen. applies to imp as well.
+
+### Accessory: Thorned Shackle
+Crafting: Jungle thornes and shackle
+3 Seconds after sacrificing life sacrifice an additional 5 life.
+Prolongs sacrifical buffs another time and triggers on-sacrifice effects
+Decreases armor by 2.
+Decreases Jumpheigt by 7%
+Warning:
+Should not call itself.
+Could be very strong compared to other items 
+
+### Accessory: Corrupting Cuffs
+Äquivalent to Magic Cuffs - Crafted from a (throned) shackle and a band (of Corruption).
+Combine effects from both items - Lose some of the drawbacks (7% jumpheigt and 1 lifeRegen decrease)
+
+
+
+## System
+
+### Lengthen blessing effects
+Add variable blessing_length_modifier to ModPlayer. Multiply value times base time when granting a blessing.
+
+### Projectile: Change MetalboundCatalystProjectile
+Adjust the Projectile to MinorDarkProjectile(Homing) and add a non-homing version or make the homing strength a parameter.
 
 
 
