@@ -20,16 +20,16 @@ namespace Ritualist.System
         public static void RitualistHurt(int hurt, Player player)
         {
             PlayerDeathReason suicide = PlayerDeathReason.ByCustomReason(NetworkText.FromLiteral(player.name + " sacrificed too much"));
-            RitualistPlayer modPlayer = player.GetModPlayer<RitualistPlayer>();
+            RitualistPlayer ritualist = player.GetModPlayer<RitualistPlayer>();
 
             // Adjustments through accessories
-            if (modPlayer.hasRedBloodVial)
+            if (ritualist.hasRedBloodVial)
             {
                 hurt -= 3;
             }
-            if (modPlayer.hasBandOfCorruption)
+            if (ritualist.hasBandOfCorruption)
             {
-                player.AddBuff(ModContent.BuffType<MinorCorruptionBlessing>(), 300);
+                player.AddBuff(ModContent.BuffType<MinorCorruptionBlessing>(), (int)(300 * ritualist.blessingModifer));
             }
 
             // Adjustments through buffs

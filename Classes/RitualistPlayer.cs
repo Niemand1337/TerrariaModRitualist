@@ -10,6 +10,7 @@ public class RitualistPlayer : ModPlayer
 {
     public bool hasRedBloodVial = false;
     public bool hasBandOfCorruption = false;
+    public float blessingModifer = 1f; // 1.1 is 10% longer blessings
 
     public override void ResetEffects()
     {

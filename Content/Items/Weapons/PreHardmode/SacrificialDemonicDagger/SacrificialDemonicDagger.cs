@@ -11,7 +11,7 @@ namespace Ritualist.Content.Items.Weapons.PreHardmode.SacrificialDemonicDagger
     /// <summary>
     /// Utility item, Post Eye of Cthulhu
     /// Sacrifical dagger that hurts the user to recieve MinorDarkBlessing and EyeOnYouBlessing
-	/// Takes 42 damage on default, heals 37.5 over 15 seconds (4.5 difference)
+	/// Takes 42 damage on default, heals 37.5 over 15 seconds
     /// </summary>
 	public class SacrificialDemonicDagger : ModItem
 	{
@@ -32,12 +32,13 @@ namespace Ritualist.Content.Items.Weapons.PreHardmode.SacrificialDemonicDagger
 
 		public override bool? UseItem(Player player)
 		{
-            // Player sacrifice
-            RitualistHurtSystem.RitualistHurt(42, player);
+			// Player sacrifice
+			RitualistHurtSystem.RitualistHurt(42, player);
 
             // Player recieves blessings
-            player.AddBuff(ModContent.BuffType<EyeOnYouBlessing>(), 660);
-			player.AddBuff(ModContent.BuffType<MinorDarkBlessing>(), 900); // Increases lifeRegen by 5, which results in 37.5 life over 15 seconds
+			float blessingModifer= player.GetModPlayer<RitualistPlayer>().blessingModifer;
+            player.AddBuff(ModContent.BuffType<EyeOnYouBlessing>(), (int)(660 * blessingModifer));
+			player.AddBuff(ModContent.BuffType<MinorDarkBlessing>(), (int)(900 * blessingModifer));
 			return base.UseItem(player);
 		}
 

@@ -16,6 +16,9 @@ namespace Ritualist.System
 
             RecipeGroup metalBroadswordGroup = new RecipeGroup(() => "Gold or Platinum Broadsword", ItemID.GoldBroadsword, ItemID.PlatinumBroadsword);
             RecipeGroup.RegisterGroup("Ritualist:Gold-OrPlatinumBroadsword", metalBroadswordGroup);
+
+            RecipeGroup crimtaneBarGroup = new RecipeGroup(() => "Crimtane or Demonite Bar", ItemID.CrimtaneBar, ItemID.DemoniteBar);
+            RecipeGroup.RegisterGroup("Ritualist:Crimtane-OrDemoniteBar", crimtaneBarGroup);
         }
     }
 }
