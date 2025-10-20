@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
-using Ritualist.Buffs.MinorDarkBlessing;
-using Ritualist.Content.Projectiles.MinorDarkProjectile;
+using Ritualist.Buffs.MinorDark;
+using Ritualist.Content.Projectiles.MinorDark;
 using Ritualist.System;
 using Terraria;
 using Terraria.DataStructures;

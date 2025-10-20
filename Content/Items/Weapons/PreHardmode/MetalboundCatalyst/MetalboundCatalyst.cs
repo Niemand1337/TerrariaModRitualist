@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
-using Ritualist.Buffs.MinorDarkBlessing;
-using Ritualist.Content.Projectiles.MinorDarkProjectile;
+using Ritualist.Buffs.MinorDark;
+using Ritualist.Content.Projectiles.MinorDark;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -9,7 +9,7 @@ using Terraria.ModLoader;
 namespace Ritualist.Content.Items.Weapons.PreHardmode.MetalboundCatalyst
 {
     /// <summary>
-    /// Weapon, PreBoss
+    /// Weapon
     /// Magic staff thats shoots two homing projectiles MetalboundCatalystProjectile.
     /// Can only be used with a Dark Blessing
     /// </summary>

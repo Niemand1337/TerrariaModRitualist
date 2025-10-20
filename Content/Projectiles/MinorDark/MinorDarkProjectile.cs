@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Ritualist.Content.Projectiles.MinorDarkProjectile
+namespace Ritualist.Content.Projectiles.MinorDark
 {
     public class MinorDarkProjectile : ModProjectile
     {

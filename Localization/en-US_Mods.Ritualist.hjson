@@ -96,4 +96,9 @@ Items: {
 }
 
 DamageClasses.RitualistClass.DisplayName: ritualist damage
-Projectiles.MinorDarkProjectile.DisplayName: Minor Dark Projectile
+
+Projectiles: {
+	MinorDarkProjectile.DisplayName: Minor Dark Projectile
+	PurpleLaserProjectile.DisplayName: Purple Laser Projectile
+	PurpleSphereProjectile.DisplayName: Purple Sphere Projectile
+}

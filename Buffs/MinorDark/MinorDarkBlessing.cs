@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace Ritualist.Buffs.MinorDarkBlessing
+namespace Ritualist.Buffs.MinorDark
 {
     /// <summary>
     /// Buff
@@ -18,7 +18,7 @@ namespace Ritualist.Buffs.MinorDarkBlessing
 
         public static readonly int FrameCount = 4; // Amount of frames we have on our animation spritesheet.
 		public static readonly int AnimationSpeed = 30;
-        public static readonly string AnimationSheetPath = "Ritualist/Buffs/MinorDarkBlessing/MinorDarkBlessing";
+        public static readonly string AnimationSheetPath = "Ritualist/Buffs/MinorDark/MinorDarkBlessing";
         private Asset<Texture2D> animatedTexture;
 
         public override void SetStaticDefaults()
