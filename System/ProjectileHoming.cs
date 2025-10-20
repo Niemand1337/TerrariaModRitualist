@@ -6,11 +6,8 @@ namespace Ritualist.System
 {
     public class ProjectileHoming : ModSystem
     {
-        public Vector2 LinearHoming(Projectile projectile, float homingRange, float homingStrength)
+        public NPC ClosestTarget(Projectile projectile, float homingRange)
         {
-            float nonHomingStrength = 1 - homingStrength; // Reverse percentage
-
-            // Find the closest target
             NPC target = null;
             float closestDistance = homingRange;
 
@@ -18,6 +15,7 @@ namespace Ritualist.System
             {
                 NPC npc = Main.npc[i];
                 if (npc.CanBeChasedBy(this))
+
                 {
                     float distance = Vector2.Distance(projectile.Center, npc.Center);
                     if (distance < closestDistance)
@@ -27,6 +25,15 @@ namespace Ritualist.System
                     }
                 }
             }
+            return target;
+        }
+
+
+        public Vector2 LinearHoming(Projectile projectile, float homingRange, float homingStrength)
+        {
+            float nonHomingStrength = 1 - homingStrength; // Reverse percentage
+
+            NPC target = ClosestTarget(projectile, homingRange);
 
             if (target != null) // Target found
             {
@@ -43,5 +50,16 @@ namespace Ritualist.System
             }
             return projectile.velocity;
         }
+
+        public Vector2 LinearAim(Projectile projectile, float homingRange)
+        {
+            NPC target = ClosestTarget(projectile, homingRange);
+            if (target == null)
+            {
+                return Vector2.Zero;
+            }
+            return projectile.DirectionTo(target.Center).SafeNormalize(Vector2.Zero);
+        }
+
     }
 }

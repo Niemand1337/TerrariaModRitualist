@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
-using Ritualist.Buffs.MinorDarkBlessing;
-using Ritualist.Content.Projectiles.MetalboundCatalystProjectile;
+using Ritualist.Buffs.MinorDark;
+using Ritualist.Content.Projectiles.MinorDark;
 using Ritualist.System;
 using Terraria;
 using Terraria.DataStructures;
@@ -12,7 +12,7 @@ namespace Ritualist.Content.Items.Weapons.PreHardmode.CorruptedMetalBlade
     /// <summary>
     /// Weapon, PreBoss
     /// Broadsword that also shoots projectiles like the Ice Blade
-    /// Without Dark Blessing player takes 10 sacrificialHurt
+    /// Without Dark Blessing player takes 11 sacrificialHurt
     /// With Dark Blessing player shots MetalboundCatalystProjectile every fourth swing
     /// </summary>
     public class CorruptedMetalBlade : ModItem
@@ -38,7 +38,7 @@ namespace Ritualist.Content.Items.Weapons.PreHardmode.CorruptedMetalBlade
             Item.useStyle = ItemUseStyleID.Swing;
             Item.UseSound = SoundID.Item20;
 
-            Item.shoot = ModContent.ProjectileType<MetalboundCatalystProjectile>();
+            Item.shoot = ModContent.ProjectileType<MinorDarkProjectile>();
             Item.shootSpeed = 9.5f;
         }
 
@@ -72,7 +72,7 @@ namespace Ritualist.Content.Items.Weapons.PreHardmode.CorruptedMetalBlade
             else // Used without buff MinorDarkBlessing
             {
                 swingCount = 0;
-                RitualistHurtSystem.RitualistHurt(hurt: 10, player: player);
+                RitualistHurtSystem.RitualistHurt(hurt: 11, player: player);
             }
             return false;
         }

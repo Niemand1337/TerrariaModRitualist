@@ -1,5 +1,5 @@
 using Microsoft.Xna.Framework;
-using Ritualist.Buffs.MinorDarkBlessing;
+using Ritualist.Buffs.MinorDark;
 using Ritualist.System;
 using Terraria;
 using Terraria.ID;

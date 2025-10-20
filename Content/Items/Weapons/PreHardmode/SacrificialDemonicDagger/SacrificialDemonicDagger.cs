@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
-using Ritualist.Buffs.EyeOnYouBlessing;
-using Ritualist.Buffs.MinorDarkBlessing;
+using Ritualist.Buffs.EyeOnYou;
+using Ritualist.Buffs.MinorDark;
 using Ritualist.System;
 using Terraria;
 using Terraria.ID;
