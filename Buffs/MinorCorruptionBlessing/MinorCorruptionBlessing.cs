@@ -24,7 +24,7 @@ namespace Ritualist.Buffs.MinorCorruptionBlessing
         {
             Main.debuff[Type] = false;
             Main.buffNoSave[Type] = false;
-            Main.buffNoTimeDisplay[Type] = false;
+            Main.buffNoTimeDisplay[Type] = true;
 
             animatedTexture = ModContent.Request<Texture2D>(AnimationSheetPath);
         }
