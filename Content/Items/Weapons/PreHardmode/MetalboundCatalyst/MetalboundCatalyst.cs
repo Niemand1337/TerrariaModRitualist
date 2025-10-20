@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 using Ritualist.Buffs.MinorDarkBlessing;
-using Ritualist.Content.Projectiles.MetalboundCatalystProjectile;
+using Ritualist.Content.Projectiles.MinorDarkProjectile;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -38,7 +38,7 @@ namespace Ritualist.Content.Items.Weapons.PreHardmode.MetalboundCatalyst
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.UseSound = SoundID.Item20;
 
-            Item.shoot = ModContent.ProjectileType<MetalboundCatalystProjectile>();
+            Item.shoot = ModContent.ProjectileType<MinorDarkProjectile>();
             Item.shootSpeed = 9.5f;
         }
 
