@@ -79,7 +79,7 @@ Items: {
 		Tooltip:
 			'''
 			A once shining sword - corrupted by darkness.
-			Sacrifice 7 life when missing a Dark Blessing.
+			Sacrifice 11 life when missing a Dark Blessing.
 			Shoots a projectile on every fourth swing with a Dark Blessing.
 			'''
 	}
@@ -92,6 +92,11 @@ Items: {
 			Regeneration decreases by 0.5 life per second.
 			Receive a Minor Corruption Blessing on sacrifices.
 			'''
+	}
+
+	MinorDarkSpellbook: {
+		DisplayName: Minor Dark Spellbook
+		Tooltip: ""
 	}
 }
 

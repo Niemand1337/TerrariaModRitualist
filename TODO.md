@@ -14,12 +14,6 @@ Shoots laser with Eye On You Blessing (So only good at post Cthulhu).
 Laser pierces one time with Corruption Blessing.
 Crimtane red and Demonite purple color for spear and laser.
 
-### Weapon: Minor Dark Spellbook
-Shoot orbs that are non-damagin and slow down till velocity (0,0).
-Then they shoot a purple laser to the nearest enemy and disappear.
-Cost life on usage without dark blessing.
-Shoots one additional laser with Eye On You Blessing before disappearing.
-
 ### Accessory: Minor Dark Spellbookpage
 On sacrifice shoots two the Minor Dark Spellbook in a 45 degree angle to the left and right top of the player
 
@@ -64,6 +58,13 @@ Currently every item usw has just a random sound. There are Items with missmatch
 ### Buff Icon
 There is no time below the icons. There is an option for that but enabeling it leads to the time being shown to far down.
 Reason for that is, that it appears below the image - which is 4 times longer than shown as it is animated and consists of frames.
+
+### PurpleSphereProjectile
+The projectile is to big - making it 2/3 or 1/2 the size would improve the visual.
+With this adjustment there is an need to change the shootLaser function of it, as there the offset for the laser spawn must be adjusted to the new radius.
+
+### PurpleLaserProjectile
+Improve the visual - more research and testing with lasers is needed.
 
 
 
