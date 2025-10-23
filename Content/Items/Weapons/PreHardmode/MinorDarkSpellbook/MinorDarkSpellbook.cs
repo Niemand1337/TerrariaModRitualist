@@ -1,9 +1,6 @@
 using Microsoft.Xna.Framework;
 using Ritualist.Buffs.MinorDark;
-<<<<<<< HEAD
-=======
-using Ritualist.Content.Projectiles.MinorDark;
->>>>>>> 515884c9185e2bf7e22e345e8fc66f09c7d3e9c8
+using Ritualist.Content.Items.Craftables.PreHardmode.InkAndQuill;
 using Ritualist.Content.Projectiles.PurpleSphere;
 using Ritualist.System;
 using Terraria;
@@ -48,6 +45,18 @@ namespace Ritualist.Content.Items.Weapons.PreHardmode.MinorDarkSpellbook
 
             Item.shoot = ModContent.ProjectileType<PurpleSphereProjectile>();
             Item.shootSpeed = 7f;
+        }
+
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddRecipeGroup("Ritualist:Crimtane-OrDemoniteBar", 3);
+            recipe.AddIngredient(ModContent.ItemType<InkAndQuill>(), 1);
+            recipe.AddIngredient(ItemID.Leather, 1);
+            recipe.AddIngredient(ItemID.Silk, 5);
+            recipe.AddIngredient(ItemID.Deathweed, 3);
+            recipe.AddTile(TileID.WorkBenches);
+            recipe.Register();
         }
 
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)

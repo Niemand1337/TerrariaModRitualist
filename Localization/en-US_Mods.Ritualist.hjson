@@ -105,6 +105,15 @@ Items: {
 			Laser pierces one enemy with Minor Corruption Blessing.
 			'''
 	}
+
+	InkAndQuill: {
+		DisplayName: Ink & Quill
+		Tooltip:
+		'''
+		"Writing is easy. All you have to do is cross out the wrong words." - Mark Twain
+		Easy to say if the books you are writing can't kill you...
+		'''
+	}
 }
 
 DamageClasses.RitualistClass.DisplayName: ritualist damage
