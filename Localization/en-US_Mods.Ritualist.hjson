@@ -80,7 +80,7 @@ Items: {
 		Tooltip:
 			'''
 			A once shining sword - corrupted by darkness.
-			Sacrifice 7 life when missing a Dark Blessing.
+			Sacrifice 11 life when missing a Dark Blessing.
 			Shoots a projectile on every fourth swing with a Dark Blessing.
 			'''
 	}
@@ -94,8 +94,6 @@ Items: {
 			Receive a Minor Corruption Blessing on sacrifices.
 			'''
 	}
-<<<<<<< HEAD
-=======
 
 	MinorDarkSpellbook: {
 		DisplayName: Minor Dark Spellbook
@@ -107,8 +105,12 @@ Items: {
 			Laser pierces one enemy with Minor Corruption Blessing.
 			'''
 	}
->>>>>>> 01c2a75 (Balanced MinorDarkSpellbook and adjusted projectiles of it)
 }
 
 DamageClasses.RitualistClass.DisplayName: ritualist damage
-Projectiles.MetalboundCatalystProjectile.DisplayName: Metalbound Catalyst Projectile
+
+Projectiles: {
+	MinorDarkProjectile.DisplayName: Minor Dark Projectile
+	PurpleLaserProjectile.DisplayName: Purple Laser Projectile
+	PurpleSphereProjectile.DisplayName: Purple Sphere Projectile
+}

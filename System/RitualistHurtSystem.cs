@@ -2,8 +2,8 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Terraria.Localization;
-using Ritualist.Buffs.EyeOnYouBlessing;
-using Ritualist.Buffs.MinorCorruptionBlessing;
+using Ritualist.Buffs.EyeOnYou;
+using Ritualist.Buffs.MinorCorruption;
 
 
 

@@ -3,9 +3,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Ritualist.Content.Projectiles.MetalboundCatalystProjectile
+namespace Ritualist.Content.Projectiles.MinorDark
 {
-    public class MetalboundCatalystProjectile : ModProjectile
+    public class MinorDarkProjectile : ModProjectile
     {
         static readonly ProjectileHoming homingSystem = ModContent.GetInstance<ProjectileHoming>();
         static readonly float homingRange = 175f; // How far to search for targets

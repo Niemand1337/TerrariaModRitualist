@@ -1,5 +1,9 @@
 using Microsoft.Xna.Framework;
 using Ritualist.Buffs.MinorDark;
+<<<<<<< HEAD
+=======
+using Ritualist.Content.Projectiles.MinorDark;
+>>>>>>> 515884c9185e2bf7e22e345e8fc66f09c7d3e9c8
 using Ritualist.Content.Projectiles.PurpleSphere;
 using Ritualist.System;
 using Terraria;

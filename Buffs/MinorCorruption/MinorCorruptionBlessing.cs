@@ -5,19 +5,19 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace Ritualist.Buffs.EyeOnYouBlessing
+namespace Ritualist.Buffs.MinorCorruption
 {
     /// <summary>
     /// Buff
-    /// Basic blessing that reduces sacrifice damage by two.
-    /// Provides multiple small buffs (Defense, speed, jumpSpeed).
+    /// Basic blessing that increases provides multiple small buffs.
+    /// Increase lifeRegen by 5 (2.5h/s), ritualist damage by 5% and armor piercing by 5
     /// </summary>
-    public class EyeOnYouBlessing : ModBuff
+    public class MinorCorruptionBlessing : ModBuff
     {
 
         public static readonly int FrameCount = 4; // Amount of frames we have on our animation spritesheet.
 		public static readonly int AnimationSpeed = 30;
-        public static readonly string AnimationSheetPath = "Ritualist/Buffs/EyeOnYouBlessing/EyeOnYouBlessing";
+        public static readonly string AnimationSheetPath = "Ritualist/Buffs/MinorCorruption/MinorCorruptionBlessing";
         private Asset<Texture2D> animatedTexture;
 
         public override void SetStaticDefaults()
@@ -41,9 +41,9 @@ namespace Ritualist.Buffs.EyeOnYouBlessing
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.statDefense += 7;
-            player.moveSpeed += 0.05f;
-            player.jumpSpeedBoost += 0.03f;
+            player.GetArmorPenetration<RitualistClass>() += 5;
+            player.lifeRegen += 5;
+            player.GetDamage<RitualistClass>() += 0.05f;
             base.Update(player, ref buffIndex);
         }
     }
