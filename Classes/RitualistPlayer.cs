@@ -1,5 +1,6 @@
 using Ritualist.Content.Items.Accessories.PreHardmode.BandOfCorruption;
 using Ritualist.Content.Items.Accessories.PreHardmode.RedBloodVial;
+using Ritualist.System;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -8,37 +9,37 @@ using Terraria.ModLoader;
 /// </summary>
 public class RitualistPlayer : ModPlayer
 {
+    // Modifier
+    public float blessingModifer = 1f; // 1.1 is 10% longer blessings
+
+    // Accessory
     public bool hasRedBloodVial = false;
     public bool hasBandOfCorruption = false;
-    public float blessingModifer = 1f; // 1.1 is 10% longer blessings
+    public bool hasThornedShackle = false;
+    public bool hasThornedShackleDamageIncoming = false;
+    public int cooldownThornedShackleDamage = 0;
+
 
     public override void ResetEffects()
     {
         hasRedBloodVial = false;
         hasBandOfCorruption = false;
+        hasThornedShackle = false;
     }
 
-    public override void UpdateEquips()
-    {
-        ResetEffects();
-        for (int i = 3; i < 8 + Player.extraAccessorySlots; i++) // First 3 are armor, 5 accessory slots per default
-        {
-            Item accessory = Player.armor[i];
-            if (accessory == null || accessory.IsAir) // Skip empty slots
-            {
-                continue;
-            }
 
-            if (accessory.type == ModContent.ItemType<RedBloodVial>())
+    public override void PostUpdate()
+    {
+        // ThornedShackleDamage
+        if (hasThornedShackle && hasThornedShackleDamageIncoming)
+        {
+            cooldownThornedShackleDamage--;
+            if (cooldownThornedShackleDamage <= 0)
             {
-                hasRedBloodVial = true;
-                continue;
-            }
-            if (accessory.type == ModContent.ItemType<BandOfCorruption>())
-            {
-                hasBandOfCorruption = true;
-                continue;
+                RitualistHurtSystem.RitualistHurt(10, Player);
             }
         }
+        
+        base.PostUpdate();
     }
 }
