@@ -26,6 +26,7 @@ Buffs: {
 		Description:
 			'''
 			You feel the world tilt ever so slightly... does it favor the impure?.
+			Some projectiles penetrate the enemy once more.
 			Regeneration increases by 2.5 life per second.
 			Increase armor penetration by 5.
 			Ritualist damage is 5% higher.
@@ -93,6 +94,20 @@ Items: {
 			Receive a Minor Corruption Blessing on sacrifices.
 			'''
 	}
+<<<<<<< HEAD
+=======
+
+	MinorDarkSpellbook: {
+		DisplayName: Minor Dark Spellbook
+		Tooltip:
+			'''
+			Penned by you in uncertainty — its truths half-guessed, half-feared.
+			Shoots an orb, that shoots a laser. Why Simple?
+			Additional laser with Eye On You Blessing.
+			Laser pierces one enemy with Minor Corruption Blessing.
+			'''
+	}
+>>>>>>> 01c2a75 (Balanced MinorDarkSpellbook and adjusted projectiles of it)
 }
 
 DamageClasses.RitualistClass.DisplayName: ritualist damage

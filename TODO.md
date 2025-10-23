@@ -69,7 +69,7 @@ Reason for that is, that it appears below the image - which is 4 times longer th
 
 ## Balancing
 
-### Possible problem - "Worse sacrificial dagger is actually better"
+### Possible problem - "Worse sacrificial dagger is actually better" or "Using weapons without minor dark debuff is good"
 Using an older sacrifical dagger leads t more frequent usage and a worse life to buff ratio, if one tooks the time to recast only on Darknes Blessing end.
 Additionally one is missing out on the buffs from the better daggers - in return the accessories on-sacrifice effects will be cast in a shorter interval.
 Needs to be consindered to prevent the effects from on-sacrifice to be as good to outweight using a better dagger.
