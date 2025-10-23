@@ -22,6 +22,7 @@ namespace Ritualist.Content.Items.Accessories.PreHardmode.RedBloodVial {
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            player.GetModPlayer<RitualistPlayer>().hasRedBloodVial = true;
             player.lifeRegen += 1; // 0.5 health per second
         }
     }

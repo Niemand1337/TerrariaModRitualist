@@ -23,6 +23,7 @@ namespace Ritualist.Content.Items.Accessories.PreHardmode.BandOfCorruption {
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            player.GetModPlayer<RitualistPlayer>().hasBandOfCorruption = true;
             player.lifeRegen -= 1; // -0.5h/s
         }
     }
