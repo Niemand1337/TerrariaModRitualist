@@ -10,8 +10,7 @@ namespace Ritualist.Content.Items.Accessories.PreHardmode.ThornedShackle
     /// 3 Seconds after sacrificing life sacrifice an additional 10 life.
     /// Decreases armor by 2.
     /// Decreases Jumpheigt by 7%
-    /// Warning: Should not call itself recursive and could be very strong
-    /// Implementation in RitualistPlayer PostUpdate and RitualistHurtSystem
+    /// Implementation in RitualistPlayer PostUpdate and RitualistHurtSystem (Recursion prevented)
     /// </summary>
     public class ThornedShackle : ModItem
     {

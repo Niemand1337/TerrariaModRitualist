@@ -109,9 +109,21 @@ Items: {
 	InkAndQuill: {
 		DisplayName: Ink & Quill
 		Tooltip:
+			'''
+			"Writing is easy. All you have to do is cross out the wrong words." - Mark Twain
+			Easy to say if the books you are writing can't kill you...
+			'''
+	}
+
+	ThornedShackle: {
+		DisplayName: Thorned Shackle
+		Tooltip:
 		'''
-		"Writing is easy. All you have to do is cross out the wrong words." - Mark Twain
-		Easy to say if the books you are writing can't kill you...
+		Why are there stringer inside?
+		After a sacrifice do another with 10 life delayed by 3 seconds
+		Triggers on-sacrifice effects.
+		Lose 2 defense.
+		Jump 7% lower.
 		'''
 	}
 }
