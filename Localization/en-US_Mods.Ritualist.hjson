@@ -118,13 +118,23 @@ Items: {
 	ThornedShackle: {
 		DisplayName: Thorned Shackle
 		Tooltip:
-		'''
-		Why are there stringer inside?
-		After a sacrifice do another with 10 life delayed by 3 seconds
-		Triggers on-sacrifice effects.
-		Lose 2 defense.
-		Jump 7% lower.
-		'''
+			'''
+			Why are there stringer inside?
+			After a sacrifice do another with 10 life delayed by 3 seconds
+			Triggers on-sacrifice effects.
+			Lose 2 defense.
+			Jump 7% lower.
+			'''
+	}
+
+	TornDarkSpellbookpage: {
+		DisplayName: Torn Dark Spellbookpage
+		Tooltip:
+			'''
+			Even ripped your truths and lies hold some power
+			Shoots two projectiles from the Minor Dark Spellbook on sacrifice.
+			7 second cooldown.
+			'''
 	}
 }
 

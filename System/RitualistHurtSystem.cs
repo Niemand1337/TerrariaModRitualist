@@ -6,7 +6,7 @@ using Ritualist.Buffs.EyeOnYou;
 using Ritualist.Buffs.MinorCorruption;
 using Ritualist.Content.Projectiles.PurpleSphere;
 using Microsoft.Xna.Framework;
-using Ritualist.Content.Items.Accessories.PreHardmode.MinorDarkSpellbookpage;
+using Ritualist.Content.Items.Accessories.PreHardmode.TornDarkSpellbookpage;
 
 
 
@@ -38,10 +38,10 @@ namespace Ritualist.System
             {
                 ThornedShackleHurt(ritualist);
             }
-            if (ritualist.hasMinorDarkSpellbookpage && ritualist.cooldownMinorDarkSpellbookpage == 0)
+            if (ritualist.hasTornDarkSpellbookpage && ritualist.cooldownTornDarkSpellbookpage == 0)
             {
                 MinorDarkSpellbookpage(player);
-                ritualist.cooldownMinorDarkSpellbookpage = 7 * 60;
+                ritualist.cooldownTornDarkSpellbookpage = 7 * 60;
             }
 
             // Adjustments through buffs
@@ -79,12 +79,12 @@ namespace Ritualist.System
         {
             foreach (Item item in player.armor)
             {
-                if (item.type == ModContent.ItemType<MinorDarkSpellbookpage>()) // Needs to have the object instance of the item of the player as damage source
+                if (item.type == ModContent.ItemType<TornDarkSpellbookpage>()) // Needs to have the object instance of the item of the player as damage source
                 {
                     Projectile.NewProjectile(
                         player.GetSource_Accessory(item),
                         player.Center,
-                        new Vector2(x: 1, y: 1),
+                        new Vector2(x: 1, y: -1),
                         ModContent.ProjectileType<PurpleSphereProjectile>(),
                         29,
                         0
@@ -92,7 +92,7 @@ namespace Ritualist.System
                     Projectile.NewProjectile(
                         player.GetSource_Accessory(item),
                         player.Center,
-                        new Vector2(x: 1, y: -1),
+                        new Vector2(x: -1, y: -1),
                         ModContent.ProjectileType<PurpleSphereProjectile>(),
                         29,
                         0

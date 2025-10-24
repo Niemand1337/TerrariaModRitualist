@@ -81,7 +81,7 @@ namespace Ritualist.Content.Projectiles.PurpleSphere
 
             int pIndex = Projectile.NewProjectile(
                 Projectile.GetSource_FromThis(), // This projectile is the spawn source
-                Projectile.Center + laserDirection * 30f, // Projectile spawns from the center of this projectile with an offset
+                Projectile.Center + laserDirection * 27f, // Projectile spawns from the center of this projectile with an offset
                 laserDirection * 23f, // Laser velocity
                 ModContent.ProjectileType<PurpleLaserProjectile>(),
                 Projectile.damage, // Inherits damage
