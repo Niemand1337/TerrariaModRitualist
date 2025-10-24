@@ -4,6 +4,9 @@ using Terraria.DataStructures;
 using Terraria.Localization;
 using Ritualist.Buffs.EyeOnYou;
 using Ritualist.Buffs.MinorCorruption;
+using Ritualist.Content.Projectiles.PurpleSphere;
+using Microsoft.Xna.Framework;
+using Ritualist.Content.Items.Accessories.PreHardmode.TornDarkSpellbookpage;
 
 
 
@@ -35,6 +38,11 @@ namespace Ritualist.System
             {
                 ThornedShackleHurt(ritualist);
             }
+            if (ritualist.hasTornDarkSpellbookpage && ritualist.cooldownTornDarkSpellbookpage == 0)
+            {
+                MinorDarkSpellbookpage(player);
+                ritualist.cooldownTornDarkSpellbookpage = 7 * 60;
+            }
 
             // Adjustments through buffs
             if (player.HasBuff(ModContent.BuffType<EyeOnYouBlessing>()))
@@ -61,6 +69,37 @@ namespace Ritualist.System
             // Start or reset cooldown because of not ThornedShackle sacrifice
             ritualist.hasThornedShackleDamageIncoming = true;
             ritualist.cooldownThornedShackleDamage = 180; // 3 seconds
+        }
+
+        /// <summary>
+        /// Spawns 2 PurpleSphereProjectile from the player in 45 and 135 degree based on (1, 0)
+        /// </summary>
+        /// <param name="player"></param>
+        public static void MinorDarkSpellbookpage(Player player)
+        {
+            foreach (Item item in player.armor)
+            {
+                if (item.type == ModContent.ItemType<TornDarkSpellbookpage>()) // Needs to have the object instance of the item of the player as damage source
+                {
+                    Projectile.NewProjectile(
+                        player.GetSource_Accessory(item),
+                        player.Center,
+                        new Vector2(x: 1, y: -1),
+                        ModContent.ProjectileType<PurpleSphereProjectile>(),
+                        29,
+                        0
+                    );
+                    Projectile.NewProjectile(
+                        player.GetSource_Accessory(item),
+                        player.Center,
+                        new Vector2(x: -1, y: -1),
+                        ModContent.ProjectileType<PurpleSphereProjectile>(),
+                        29,
+                        0
+                    );
+                    break;
+                }
+            }
         }
     }
 }

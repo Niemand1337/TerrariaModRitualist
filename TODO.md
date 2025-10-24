@@ -14,9 +14,6 @@ Shoots laser with Eye On You Blessing (So only good at post Cthulhu).
 Laser pierces one time with Corruption Blessing.
 Crimtane red and Demonite purple color for spear and laser.
 
-### Accessory: Minor Dark Spellbookpage
-On sacrifice shoots two the Minor Dark Spellbook in a 45 degree angle to the left and right top of the player
-
 ### Accessory: Eyes On You Blessing
 Need an accessory that grants this blessing, as the Sacrifical Demonic Dagger will be outdated at some point.
 Mabye be able to craft the accessorie with the dagger and some other accessorie.
@@ -56,6 +53,7 @@ Improve the visual - more research and testing with lasers is needed.
 - Improve the namespacing
 - Uniform order for variables in SetDefaults() in all items
 - Uniform order of function in class for all items
+- Leave changes to the accesories, where "player.GetModPlayer<RitualistPlayer>().hasThornedShackle = true;" is in UpdateAccessory and not central in RitualistPlayer on Equipmentchange
 
 
 ## Balancing

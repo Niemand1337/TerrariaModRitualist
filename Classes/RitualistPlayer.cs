@@ -18,6 +18,8 @@ public class RitualistPlayer : ModPlayer
     public bool hasThornedShackle = false;
     public bool hasThornedShackleDamageIncoming = false;
     public int cooldownThornedShackleDamage = 0;
+    public bool hasTornDarkSpellbookpage = false;
+    public int cooldownTornDarkSpellbookpage = 0;
 
 
     public override void ResetEffects()
@@ -25,12 +27,19 @@ public class RitualistPlayer : ModPlayer
         hasRedBloodVial = false;
         hasBandOfCorruption = false;
         hasThornedShackle = false;
+        hasTornDarkSpellbookpage = false;
     }
 
 
     public override void PostUpdate()
     {
-        // ThornedShackleDamage
+        // MinorDarkSpellbookpage
+        if (hasTornDarkSpellbookpage && cooldownTornDarkSpellbookpage > 0)
+        {
+            cooldownTornDarkSpellbookpage--;
+        }
+
+        // ThornedShackle
         if (hasThornedShackle && hasThornedShackleDamageIncoming)
         {
             cooldownThornedShackleDamage--;
