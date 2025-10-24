@@ -18,13 +18,14 @@ public class RitualistPlayer : ModPlayer
     public bool hasThornedShackle = false;
     public bool hasThornedShackleDamageIncoming = false;
     public int cooldownThornedShackleDamage = 0;
-
+    public bool hasMinorDarkSpellbookpage = false;
 
     public override void ResetEffects()
     {
         hasRedBloodVial = false;
         hasBandOfCorruption = false;
         hasThornedShackle = false;
+        hasMinorDarkSpellbookpage = false;
     }
 
 
