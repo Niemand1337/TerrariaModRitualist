@@ -6,6 +6,7 @@ namespace Ritualist.Content.Items.Accessories.PreHardmode.MinorDarkSpellbookpage
     /// <summary>
     /// Accessory
     /// On sacrifice shoots two the Minor Dark Spellbook in a 45 degree angle to the left and right top of the player
+    /// Has a 7 second cooldown
     /// </summary>
     public class MinorDarkSpellbookpage : ModItem
     {

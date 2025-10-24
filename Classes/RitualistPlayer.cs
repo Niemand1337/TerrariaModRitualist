@@ -19,6 +19,8 @@ public class RitualistPlayer : ModPlayer
     public bool hasThornedShackleDamageIncoming = false;
     public int cooldownThornedShackleDamage = 0;
     public bool hasMinorDarkSpellbookpage = false;
+    public int cooldownMinorDarkSpellbookpage = 0;
+
 
     public override void ResetEffects()
     {
@@ -31,7 +33,13 @@ public class RitualistPlayer : ModPlayer
 
     public override void PostUpdate()
     {
-        // ThornedShackleDamage
+        // MinorDarkSpellbookpage
+        if (hasMinorDarkSpellbookpage && cooldownMinorDarkSpellbookpage > 0)
+        {
+            cooldownMinorDarkSpellbookpage--;
+        }
+
+        // ThornedShackle
         if (hasThornedShackle && hasThornedShackleDamageIncoming)
         {
             cooldownThornedShackleDamage--;
