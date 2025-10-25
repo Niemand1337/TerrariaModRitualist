@@ -1,3 +1,4 @@
+using Ritualist.Content.Items.Weapons.PreHardmode.SacrificialDemonicDagger;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -18,6 +19,15 @@ namespace Ritualist.Content.Items.Accessories.PreHardmode.DemonicBladeNecklace {
             Item.rare = ItemRarityID.Green;
             Item.value = Item.buyPrice(gold: 7);
             Item.defense = 2;
+        }
+
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ModContent.ItemType<SacrificialDemonicDagger>(), 1);
+            recipe.AddIngredient(ItemID.Shackle, 1);
+            recipe.AddTile(TileID.TinkerersWorkbench);
+            recipe.Register();
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
