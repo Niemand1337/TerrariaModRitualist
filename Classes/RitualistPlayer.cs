@@ -20,6 +20,7 @@ public class RitualistPlayer : ModPlayer
     public int cooldownThornedShackleDamage = 0;
     public bool hasTornDarkSpellbookpage = false;
     public int cooldownTornDarkSpellbookpage = 0;
+    public bool hasDemonicBladeNecklace = false;
 
 
     public override void ResetEffects()
@@ -28,6 +29,7 @@ public class RitualistPlayer : ModPlayer
         hasBandOfCorruption = false;
         hasThornedShackle = false;
         hasTornDarkSpellbookpage = false;
+        hasDemonicBladeNecklace = false;
     }
 
 

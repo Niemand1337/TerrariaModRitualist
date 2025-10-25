@@ -136,6 +136,17 @@ Items: {
 			7 second cooldown.
 			'''
 	}
+
+	DemonicBladeNecklace: {
+		DisplayName: Demonic Blade Necklace
+		Tooltip:
+		'''
+		Your old dagger - as unforgotten as the wounds it inflicted on to you
+		Grants Eye on you Blessing on sacrifice for 5 seconds.
+    	Increase ritualist damage by 3%.
+		Have 2 additional defense.
+		'''
+	}
 }
 
 DamageClasses.RitualistClass.DisplayName: ritualist damage

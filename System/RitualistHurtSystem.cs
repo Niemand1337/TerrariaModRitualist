@@ -26,17 +26,18 @@ namespace Ritualist.System
             RitualistPlayer ritualist = player.GetModPlayer<RitualistPlayer>();
 
             // Adjustments through accessories
-            if (ritualist.hasRedBloodVial)
-            {
-                hurt -= 3;
-            }
-            if (ritualist.hasBandOfCorruption)
+            if (ritualist.hasBandOfCorruption) // Get 5 seconds MinorCorruptionBlessing
             {
                 player.AddBuff(ModContent.BuffType<MinorCorruptionBlessing>(), (int)(300 * ritualist.blessingModifer));
             }
+            if (ritualist.hasDemonicBladeNecklace) // 
+            {
+                player.AddBuff(ModContent.BuffType<EyeOnYouBlessing>(), (int)(300 * ritualist.blessingModifer));
+            }
+
             if (ritualist.hasThornedShackle)
             {
-                ThornedShackleHurt(ritualist);
+                ThornedShackleHurt(ritualist); // Spawns projectiles - has 7 seconds cooldown
             }
             if (ritualist.hasTornDarkSpellbookpage && ritualist.cooldownTornDarkSpellbookpage == 0)
             {
@@ -44,12 +45,22 @@ namespace Ritualist.System
                 ritualist.cooldownTornDarkSpellbookpage = 7 * 60;
             }
 
+            if (ritualist.hasRedBloodVial) // Take 3 less sacrificial damage
+            {
+                hurt -= 3;
+            }
+
             // Adjustments through buffs
-            if (player.HasBuff(ModContent.BuffType<EyeOnYouBlessing>()))
+            if (player.HasBuff(ModContent.BuffType<EyeOnYouBlessing>())) // Take 2 less sacrificial damage
             {
                 hurt -= 2;
             }
 
+            // Take hurt as damage
+            if (hurt < 3) // Can't heal on sacrifice - Smallest Sacrifice is 3
+            {
+                hurt = 3;
+            }
             player.Hurt(suicide, hurt, 0, pvp: false, quiet: false, cooldownCounter: -1, dodgeable: false, armorPenetration: 9999f, scalingArmorPenetration: 9999f, knockback: 0f);
         }
 
