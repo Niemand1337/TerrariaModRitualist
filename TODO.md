@@ -47,9 +47,10 @@ Extremly high cooldown and mana cost.
 Minor Corruption Blessing reduces mana cost.
 Bone Kings Blessing reduces high cooldown.
 
-### Accessory: Eyes On You Blessing
-Need an accessory that grants this blessing, as the Sacrifical Demonic Dagger will be outdated at some point.
-Mabye be able to craft the accessorie with the dagger and some other accessorie.
+### Accessory: Chain with Demonic Blade
+Crafting: Sacrifical Demonic Dagger and shackle
+Grants Eye on you Blessing on sacrifice.
+Increases armor by 2 and ritualist damage by 3%
 
 ### Accessory: Fiend's Contract
 Flavor text like 'What is the worth of a soul anyway?' or "What is the worth of a soul - in face of true power?"
@@ -65,7 +66,7 @@ Combine effects from both items - Lose some of the drawbacks (7% jumpheigt and 1
 
 ## System
 
-### Recipies
+### Recipes
 Missing for BandOfCorruption
 
 
