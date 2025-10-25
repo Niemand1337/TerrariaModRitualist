@@ -97,3 +97,7 @@ Improve the visual - more research and testing with lasers is needed.
 Using an older sacrifical dagger leads t more frequent usage and a worse life to buff ratio, if one tooks the time to recast only on Darknes Blessing end.
 Additionally one is missing out on the buffs from the better daggers - in return the accessories on-sacrifice effects will be cast in a shorter interval.
 Needs to be consindered to prevent the effects from on-sacrifice to be as good to outweight using a better dagger.
+
+### Test all and compare to mage and melee class
+The items are currently possible inbalenced in themself - meaning that the items from progression are not surely always better. Testing needed.
+Also it can be that the ritualist is significantly stronger or weaker than other classes at the same progression 
