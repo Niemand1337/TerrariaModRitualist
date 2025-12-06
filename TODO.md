@@ -62,8 +62,6 @@ Combine effects from both items - Lose some of the drawbacks (7% jumpheigt and 1
 ## System
 
 ### Recipes
-Missing for BandOfCorruption
-
 
 
 ## Needed adjustments
@@ -89,7 +87,7 @@ Improve the visual - more research and testing with lasers is needed.
 ## Balancing
 
 ### Possible problem - "Worse sacrificial dagger is actually better" or "Using weapons without minor dark debuff is good"
-Using an older sacrifical dagger leads t more frequent usage and a worse life to buff ratio, if one tooks the time to recast only on Darknes Blessing end.
+Using an older sacrifical dagger leads to more frequent usage and a worse life to buff ratio, if one tooks the time to recast only on Darknes Blessing end.
 Additionally one is missing out on the buffs from the better daggers - in return the accessories on-sacrifice effects will be cast in a shorter interval.
 Needs to be consindered to prevent the effects from on-sacrifice to be as good to outweight using a better dagger.
 
