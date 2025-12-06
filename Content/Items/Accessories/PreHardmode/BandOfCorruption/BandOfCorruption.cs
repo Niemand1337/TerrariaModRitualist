@@ -21,6 +21,16 @@ namespace Ritualist.Content.Items.Accessories.PreHardmode.BandOfCorruption {
             Item.defense = 0;
         }
 
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddRecipeGroup("Ritualist:Crimtane-OrDemoniteBar", 3);
+            recipe.AddIngredient(ItemID.BandofRegeneration, 1);
+            recipe.AddIngredient(ItemID.Shackle, 1);
+            recipe.AddTile(TileID.TinkerersWorkbench);
+            recipe.Register();
+        }
+
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetModPlayer<RitualistPlayer>().hasBandOfCorruption = true;
