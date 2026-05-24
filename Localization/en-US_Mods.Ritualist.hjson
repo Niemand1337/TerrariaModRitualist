@@ -15,8 +15,7 @@ Buffs: {
 			Something is watching over you.
 			It's calming and disturbing at the same time.
 			Take 2 less damage on sacrifices.
-			Jump 3% higher.
-			Move 5% faster.
+			Jump 3% higher and move 5% faster.
 			Have 7 additional defense.
 			'''
 	}
@@ -40,12 +39,11 @@ Buffs: {
 			The smell of sulfur fills your lungs.
 			The underworld has accepted your offering,
 			and its lower denizen awaits your command.
-			Increases ritualist damage by 11%,
-			Jump 5% higher.
-			Move 7% faster., defense by 3 and lifeRegen by 2
+			Increases ritualist damage by 11%.
+			Jump 5% higher and move 7% faster.
 			Have 3 additional defense.
 			Increase life regeneration by 1 per second.
-			Grants fire resistance.
+			Grants some fire resistances.
 			'''
 	}
 }

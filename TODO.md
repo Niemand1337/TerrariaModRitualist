@@ -1,5 +1,12 @@
 ## Ideas
 
+### Item / Guide / Interface / Website: Dark Research
+Item without effekt, but information instead.
+Simple guide for item progression.
+For each blessing all interactions with accessories and items
+For each accessorie all interactions with blessings and items
+For each item all interactions with accessories and blessings
+
 ### Buff-Adjustment: Eyes On You Blessing
 Change text by adding comment that it might guide some projectiles or so.
 Make some projectiles homing, when they are shoot while having this effect (else not).
