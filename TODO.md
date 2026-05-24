@@ -23,7 +23,7 @@ Projectiles are anti-homing and try to evade enemys. Fly straight with Eyes On Y
 Skeletron drop
 Grants Minor Dark and Bone Kings Blessing
 
-### Weapon Sacrificial Molten Dagger
+### Weapon: Sacrificial Molten Dagger
 Crafting: Hellstone and other stuff
 Grants Minor Dark and Fiends Blessing
 Burns player on-use (longer time than Fiends Blessing protects?)
@@ -67,7 +67,7 @@ Combine effects from both items - Lose some of the drawbacks (7% jumpheigt and 1
 ## Needed adjustments
 
 ### Sound rework
-Currently every item usw has just a random sound. There are Items with missmatches sound, for example a sowrd with a shooting sound.
+Currently every item usw has just a random sound. There are Items with missmatches sound, for example a sword with a shooting sound.
 
 ### Buff Icon
 There is no time below the icons. There is an option for that but enabeling it leads to the time being shown to far down.
