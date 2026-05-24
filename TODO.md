@@ -10,12 +10,6 @@ Decreases sacrifical damage by 2
 Immunity to poison
 Something bone related? -> Extra bone projectile? Skull or Skeleton summon?
 
-### Buff: Fiends Blessing
-Increases ritualist damage by 11%, speed by 7%, jump height by 5%, defense by 3 and lifeRegen by 2
-Grants fire resistance
-Summons an imp that fights (same as in fiends contract)
-Should only be used for short times
-
 ### Weapon: Cursed Weapon
 Projectiles are anti-homing and try to evade enemys. Fly straight with Eyes On You Blessing.
 

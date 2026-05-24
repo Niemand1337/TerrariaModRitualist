@@ -13,7 +13,7 @@ Buffs: {
 		Description:
 			'''
 			Something is watching over you.
-			It's calming and creepy at the same time.
+			It's calming and disturbing at the same time.
 			Take 2 less damage on sacrifices.
 			Jump 3% higher.
 			Move 5% faster.
@@ -30,6 +30,22 @@ Buffs: {
 			Regeneration increases by 2.5 life per second.
 			Increase armor penetration by 5.
 			Ritualist damage is 5% higher.
+			'''
+	}
+
+	FiendsBlessing: {
+		DisplayName: Fiends Blessing
+		Description:
+			'''
+			The smell of sulfur fills your lungs.
+			The underworld has accepted your offering,
+			and its lower denizen awaits your command.
+			Increases ritualist damage by 11%,
+			Jump 5% higher.
+			Move 7% faster., defense by 3 and lifeRegen by 2
+			Have 3 additional defense.
+			Increase life regeneration by 1 per second.
+			Grants fire resistance.
 			'''
 	}
 }
@@ -143,7 +159,7 @@ Items: {
 			'''
 			Your old dagger - as unforgotten as the wounds it inflicted on to you
 			Grants Eye on you Blessing on sacrifice for 5 seconds.
-	    	Increase ritualist damage by 3%.
+			  	Increase ritualist damage by 3%.
 			Have 2 additional defense.
 			'''
 	}
