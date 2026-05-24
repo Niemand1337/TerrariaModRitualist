@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
 using Terraria;
+using Terraria.ID;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
@@ -17,7 +18,7 @@ namespace Ritualist.Buffs.FiendsBlessing
 
         public static readonly int FrameCount = 4; // Amount of frames we have on our animation spritesheet.
 		public static readonly int AnimationSpeed = 30;
-        public static readonly string AnimationSheetPath = "Ritualist/Buffs/EyeOnYou/EyeOnYouBlessing"; // TODO: Change this to your own path and make sure the texture is set up correctly (vertical frames, no horizontal frames).
+        public static readonly string AnimationSheetPath = "Ritualist/Buffs/FiendsBlessing/FiendsBlessing";
         private Asset<Texture2D> animatedTexture;
 
         public override void SetStaticDefaults()
